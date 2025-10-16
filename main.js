@@ -64,16 +64,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
   faqItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      // If this one is already active → close it
+    const header = item.querySelector(".faq-header");
+
+    header.addEventListener("click", () => {
       if (item.classList.contains("active")) {
         item.classList.remove("active");
-        return;
+      } else {
+        faqItems.forEach((i) => i.classList.remove("active"));
+        item.classList.add("active");
       }
-
-      // Otherwise, close all others and open this one
-      faqItems.forEach((i) => i.classList.remove("active"));
-      item.classList.add("active");
     });
   });
 });
+
