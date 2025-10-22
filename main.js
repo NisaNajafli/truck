@@ -54,12 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
+  const logoImg = document.querySelector(".logo img");
+
   if (window.scrollY > 0) {
     header.classList.add("scrolled");
+    logoImg.src = "img/logo.webp"; // логотип при скролле
   } else {
     header.classList.remove("scrolled");
+    logoImg.src = "img/logoWhite.webp"; // логотип вверху страницы
   }
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
@@ -76,4 +81,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const tabButtons = document.querySelectorAll(".tab-btn");
+const forms = document.querySelectorAll(".contact-form");
 
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const target = btn.dataset.target;
+    forms.forEach((form) => {
+      form.classList.toggle("active", form.id === target);
+    });
+  });
+});
+document.querySelectorAll(".custom-select").forEach((select) => {
+  const trigger = select.querySelector(".custom-select-trigger");
+  const options = select.querySelector(".custom-options");
+
+  trigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    document.querySelectorAll(".custom-select").forEach((s) => {
+      if (s !== select) s.classList.remove("open");
+    });
+    select.classList.toggle("open");
+  });
+
+  options.querySelectorAll(".custom-option").forEach((option) => {
+    option.addEventListener("click", (e) => {
+      e.stopPropagation();
+      options.querySelectorAll(".custom-option").forEach((o) =>
+        o.classList.remove("selected")
+      );
+      option.classList.add("selected");
+      trigger.querySelector("span").textContent = option.textContent;
+      select.classList.remove("open");
+    });
+  });
+});
+
+document.addEventListener("click", () => {
+  document.querySelectorAll(".custom-select").forEach((s) =>
+    s.classList.remove("open")
+  );
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
