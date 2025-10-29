@@ -799,6 +799,7 @@ nav {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--Dark-Main, #474e5a);
 }
 
 .nominations__items {
@@ -1053,7 +1054,7 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #111;
+  color: var(--Dark-Main, #474e5a);
   margin-bottom: 30px;
   position: relative;
 }
@@ -1175,7 +1176,7 @@ nav {
   min-height: 200px;
   overflow: hidden;
   position: relative;
-  border-radius:10px
+  border-radius: 10px 0 0 10px;
 }
 #resources .col-2 .img-holder::after{
   content: "";
@@ -1296,6 +1297,7 @@ nav {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
+  color: var(--Dark-Main, #474e5a);
 }
 
 .faq-wrapper {
@@ -1464,6 +1466,7 @@ nav {
   font-size: 36px;
   padding-bottom: 20px;
   font-weight: 700;
+  color: var(--Dark-Main, #474e5a);
 }
 .section-5-cards button {
   background-color: #a8a8a81b;
