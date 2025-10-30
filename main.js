@@ -52,18 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  const logoImg = document.querySelector(".logo img");
+// window.addEventListener("scroll", function () {
+//   const header = document.querySelector("header");
+//   const logoImg = document.querySelector(".logo img");
 
-  if (window.scrollY > 0) {
-    header.classList.add("scrolled");
-    logoImg.src = "img/logo.webp"; // логотип при скролле
-  } else {
-    header.classList.remove("scrolled");
-    logoImg.src = "img/logoWhite.webp"; // логотип вверху страницы
-  }
-});
+//   if (window.scrollY > 0) {
+//     header.classList.add("scrolled");
+//     logoImg.src = "img/logo.webp"; // логотип при скролле
+//   } else {
+//     header.classList.remove("scrolled");
+//     logoImg.src = "img/logoWhite.webp"; // логотип вверху страницы
+//   }
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");

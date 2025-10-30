@@ -70,9 +70,9 @@
           <li><a href="">Фестиваль</a></li>
           <li><a href="">Участникам</a></li>
           <li><a href="">Посетителям</a></li>
-          <li><a href="">Новости</a></li>
+          <li><a href="/blogs.html">Новости</a></li>
           <li><a href="/contact.html">Контакты</a></li>
-          <li><a href="">О нас</a></li>
+          <li><a href="/about.html">О нас</a></li>
         </ul>
 
       </div>
@@ -179,7 +179,7 @@
                             <h2 class="title-76">Задаем тренды <br> технических решений <br> <span> на&nbsp;базе передовых технологий</span></h2>
 <p class="text-24">Мы&nbsp;ответственны за&nbsp;итоги нашей работы. Всегда стремимся к&nbsp;точным и&nbsp;своевременным результатам, которые открывают для&nbsp;наших клиентов новые возможности, а&nbsp;для&nbsp;нас&nbsp;— укрепляют репутацию.</p>                        </div>
                         <div class="home-about__button">
-                            <a class="submit-btn" href=""> О компании 
+                            <a class="submit-btn" href="/about.html"> О компании 
                                 <!-- <span class="button-ui__text">
                                     О компании                                </span>
                                 <span class="button-ui__arrow">
@@ -344,7 +344,7 @@
             <p class="ev-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem architecto iure nobis!
             </p>
-            <a class="link-text ev-text" href="#">
+            <a class="link-text ev-text" href="/blog1.html">
             Lorem ipsum dolor sit.
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 24 24">
                     <path stroke="#e60000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -810,7 +810,7 @@
           </div>
           <div>
           <a href="/contact.html">Контакты</a>
-          <a href="#">О нас</a>
+          <a href="/about.html">О нас</a>
           </div>
         </div>
 
@@ -857,12 +857,23 @@
 </footer>
 
 
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    const logoImg = document.querySelector(".logo img");
+
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+      logoImg.src = "img/logo.webp"; // логотип при скролле
+    } else {
+      header.classList.remove("scrolled");
+      logoImg.src = "img/logoWhite.webp"; // логотип вверху страницы
+    }
+  });
+  </script>
 </body>
 
 </html>
