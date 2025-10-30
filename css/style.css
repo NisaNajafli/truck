@@ -2916,7 +2916,7 @@ img {
 .blogs-title {
   text-align: left;
   font-size: 42px;
-  color: var(--Dark-Main);
+  color: var(--Dark-Main, #474e5a);
   text-transform: uppercase;
   margin-bottom: 70px;
 }
@@ -2971,7 +2971,7 @@ img {
 .blog-info h3 {
   font-size: 22px;
   font-weight: 800;
-  color: #1e1e1e;
+  color: var(--Dark-Main, #474e5a);
   margin-bottom: 12px;
 }
 
