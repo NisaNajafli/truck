@@ -2466,7 +2466,7 @@ section h1 {
 
     #contactFirstRL a,
     #contactFirstRR a {
-        font-size: 15px
+        font-size: 13px
     }
 
     #contactEnd,
@@ -2479,9 +2479,12 @@ section h1 {
     }
 
     #contactSocials h2 {
-        font-size: 26px
+        font-size: 22px
     }
 
+    #contactSocials a{
+      font-size: 18px;
+    }
     #contactSocials {
         justify-content: normal
     }
@@ -2607,7 +2610,7 @@ img {
   .achievements-card {
     grid-column: auto;
     display: grid;
-    grid-template-columns: 10rem auto;
+    grid-template-columns:1fr;
     gap: 0.5rem;
     border-right: none;
     padding-bottom: unset;
@@ -2635,6 +2638,12 @@ img {
 }
 .achievements-card__title {
   width: 99%;
+}
+.title-205{
+  font-size: 90px;
+}
+.achievements-card:last-of-type .text-24{
+  font-size: 16px;
 }
 @media (max-width: 1200px) {
   .achievements-card__title {
@@ -2961,7 +2970,7 @@ img {
 
 .blogs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns:1fr;
   gap: 40px;
 }
 
@@ -3248,10 +3257,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .nominations__item-description{
-    min-height: 40px;
+    min-height: 72px;
   }
   .nominations__item-inner{
-    bottom:-6%
+    bottom:-17%
   }
   #resources{
     gap: 10px;
@@ -3310,6 +3319,18 @@ img {
     flex-direction: column;
     gap: 20px;
   }
+  .single-blog .container{
+    justify-content: space-between;
+    gap: 0;
+  }
+  .is-horizontal.is-ltr .f-button.is-arrow.is-prev , .is-horizontal.is-ltr .f-button.is-arrow.is-next{
+    height: 50px;
+    width: 50px;
+  }
+  .f-button svg{
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (max-width: 768px) {
   
@@ -3322,9 +3343,26 @@ img {
   }
 
   .faq-header h3 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .faq-logo{
+    width: 200px;
   }
 
+  .faq-btn{
+        display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 35px;
+    border-radius: var(--br);
+    width: fit-content;
+    transition: all 0.3s 
+ease;
+    margin-top: 15px;
+    font-size: 12px;
+  }
   .faq-content p {
     font-size: 15px;
   }
@@ -3341,11 +3379,22 @@ img {
   footer .fcontainer{
     padding: 10px 30px !important;
   }
+  .is-horizontal.is-ltr .f-button.is-arrow.is-prev , .is-horizontal.is-ltr .f-button.is-arrow.is-next{
+    height: 50px;
+    width: 50px;
+  }
+  .f-button svg{
+    width: 20px;
+    height: 20px;
+  }
   .tab-btn{
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .nominations__item-btn p{
+    font-size: 13px;
   }
   .contacts-left h2{
-    font-size: 38px;
+    font-size: 34px;
   }
   .contact-info{
     flex-direction: column;
@@ -3368,10 +3417,18 @@ img {
     margin-bottom: 130px;
   }
   .hero-navigation{
-    max-width: 323px;
+    max-width: 308px;
   }
   .header-left p{
     display: none;
+  }
+  .projects .owl-nav .owl-next{
+    height: 55px;
+    width: 55px;
+  }
+  .projects .owl-nav .owl-prev{
+    height: 55px;
+    width: 55px;
   }
   .main-header{
     padding: 10px;
@@ -3379,9 +3436,32 @@ img {
   #resources .col-2 .img-holder{
     height: 323px;
   }
+  .hero-content h2{
+    font-size: 28px;
+  }
+  .achievements-card{
+    grid-template-columns: 1fr;
+
+  }
+  .single-blog .container{
+    grid-template-columns: 1fr;
+  }
+  .blog-title{
+    margin-bottom: 20px;
+  }
+  .full-tags{
+    padding: 10px;
+    text-align: center;
+  }
+  .blog-gallery{
+    max-width: 100%;
+  }
 }
-@media(max-width: 450px){
+@media(max-width: 576px){
    .nominations__items{
     grid-template-columns: 1fr;
   }
+      .nominations__item-inner {
+        bottom: -11%;
+    }
 }
