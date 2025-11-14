@@ -409,7 +409,7 @@ nav {
   overflow: hidden;
 }
 
-.heroSwiper .swiper-slide {
+.heroSwiper .swiper-slide , .participants-banner {
   background-size: cover;
   background-position: center;
   display: flex;
@@ -418,7 +418,7 @@ nav {
   height: 100vh;
 }
 
-.heroSwiper .swiper-slide .btn-elevated {
+.heroSwiper .swiper-slide .btn-elevated , .participants-banner .btn-elevated{
      border-radius: 5px;
     width: 197px;
     height: 56px;
@@ -433,13 +433,17 @@ nav {
   background-image: url("data:image/svg+xml,%3Csvg width='197' height='56' viewBox='0 0 197 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='1' d='M179.465 -7.42454e-07L2.1861 -1.75242e-06C0.978775 -1.80354e-06 -5.15554e-08 1.14244 -1.15147e-07 2.55161L-7.38859e-07 16.3728C-7.61046e-07 16.8645 0.121703 17.3457 0.350478 17.7585C0.579238 18.1713 0.905318 18.4982 1.2895 18.6999C4.42276 20.3447 6.44739 23.9952 6.44739 27.9998C6.44739 32.0045 4.42276 35.655 1.2895 37.2998C0.905302 37.5014 0.579191 37.8283 0.350432 38.2411C0.121657 38.654 -3.22836e-05 39.1352 -1.78825e-06 39.6268L-2.41197e-06 53.4482C-2.47556e-06 54.8574 0.978772 55.9998 2.18609 55.9998L179.465 55.9998L179.465 -7.42454e-07ZM197 53.4484L197 39.627C197 39.1353 196.878 38.6541 196.65 38.2413C196.421 37.8284 196.095 37.5015 195.71 37.2999C192.577 35.6552 190.553 32.0047 190.553 28C190.553 23.9953 192.577 20.3448 195.711 18.7001C196.095 18.4983 196.421 18.1714 196.65 17.7585C196.878 17.3457 197 16.8645 197 16.3728L197 2.55161C197 1.14244 196.021 2.13541e-07 194.814 1.62423e-07L178.837 -5.14052e-07L178.837 56L194.814 56C196.021 56 197 54.8576 197 53.4484Z' fill='red'/%3E%3C/svg%3E%0A");
 
 }
+.participants-banner .btn-elevated:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='197' height='56' viewBox='0 0 197 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='1' d='M179.465 -7.42454e-07L2.1861 -1.75242e-06C0.978775 -1.80354e-06 -5.15554e-08 1.14244 -1.15147e-07 2.55161L-7.38859e-07 16.3728C-7.61046e-07 16.8645 0.121703 17.3457 0.350478 17.7585C0.579238 18.1713 0.905318 18.4982 1.2895 18.6999C4.42276 20.3447 6.44739 23.9952 6.44739 27.9998C6.44739 32.0045 4.42276 35.655 1.2895 37.2998C0.905302 37.5014 0.579191 37.8283 0.350432 38.2411C0.121657 38.654 -3.22836e-05 39.1352 -1.78825e-06 39.6268L-2.41197e-06 53.4482C-2.47556e-06 54.8574 0.978772 55.9998 2.18609 55.9998L179.465 55.9998L179.465 -7.42454e-07ZM197 53.4484L197 39.627C197 39.1353 196.878 38.6541 196.65 38.2413C196.421 37.8284 196.095 37.5015 195.71 37.2999C192.577 35.6552 190.553 32.0047 190.553 28C190.553 23.9953 192.577 20.3448 195.711 18.7001C196.095 18.4983 196.421 18.1714 196.65 17.7585C196.878 17.3457 197 16.8645 197 16.3728L197 2.55161C197 1.14244 196.021 2.13541e-07 194.814 1.62423e-07L178.837 -5.14052e-07L178.837 56L194.814 56C196.021 56 197 54.8576 197 53.4484Z' fill='red'/%3E%3C/svg%3E%0A");
 
-.heroSwiper .swiper-slide .btn-elevated:hover span {
+}
+
+.participants-banner .btn-elevated:hover span {
   color: #fff;
   
 }
 
-.heroSwiper .swiper-slide .btn-elevated span {
+.participants-banner .btn-elevated span {
   font-size: 18px !important;
  color: var(--main-color);
   transition: .3s;
@@ -3215,6 +3219,121 @@ img {
 .participant-meta span:last-child {
   font-weight: 700;
   color: #fff;
+}
+
+
+.participants-banner{
+  background-image: url('https://a.d-cd.net/7kPQA0Prbw8xXrrC7sqdcaFfvRM-1920.jpg');
+   position: relative;
+  width: 100%;
+  height: 100vh !important;
+  overflow: hidden;
+}
+.about-festival {
+  padding: 80px 0;
+}
+
+.about-festival__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-festival h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--main-color);
+  margin-bottom: 24px;
+}
+
+.about-festival p {
+  font-size: 20px;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  font-family: var(--second-family);
+}
+.about-festival__item-inner > p{
+      font-size: 23px;
+    line-height: 1.45;
+    margin-bottom: 20px !important;
+    font-family: var(--second-family);
+    font-weight: 700;
+}
+.about-festival .file-icon{
+width: 35px;
+height: 35px;
+}
+
+.about-festival__download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  color: var(--main-color);
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* Right side images */
+.about-festival__images {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+.img1,
+.img2 {
+  position: absolute;
+  width: 100%;
+  max-width: 420px;
+}
+
+.img1 {
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.img2 {
+  bottom: -40px;
+  left: 0;
+  transform: rotate(-6deg);
+  z-index: 2;
+}
+
+.img1 img,
+.img2 img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: var(--br);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-festival__item {
+    grid-template-columns: 1fr;
+  }
+  .about-festival__images {
+    margin: 40px auto 0;
+    height: 420px;
+  }
+  .img1 img,
+  .img2 img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-festival__images {
+    height: 360px;
+  }
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
 }
 
 @media (max-width: 1200px) {

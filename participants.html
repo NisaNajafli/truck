@@ -4,18 +4,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/img/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="shortcut icon" href="/img/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
   <title>Trucks</title>
 </head>
 
 <body>
+      <!-- Modal 1 -->
+  <div class="modal" tabindex="-1" id="Modal1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">УЧАСТВОВАТЬ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="contact-form active">
+      <!-- <p>Отправьте заявку и мы проинформируем вас о начале участия</p> -->
+
+      <div class="form-row">
+        <input type="text" placeholder="ФИО*" required>
+        <input type="email" placeholder="E-mail*" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Телефон*" required>
+        <input type="text" placeholder="Компания">
+      </div>
+
+      <div class="form-row">
+        <!-- Custom Nomination -->
+        <div class="custom-select-wrapper">
+          <div class="custom-select" id="nominationSelect">
+            <div class="custom-select-trigger">
+          <span>Номинация*</span>
+          <div class="arrow"></div>
+        </div>
+            <div class="custom-options">
+              <span class="custom-option">НОМИНАЦИЯ TITAN</span>
+              <span class="custom-option">НОМИНАЦИЯ SUPER</span>
+              <span class="custom-option">НОМИНАЦИЯ PACCAR</span>
+              <span class="custom-option">НОМИНАЦИЯ BESSER&amp;BUSSING</span>
+              <span class="custom-option">НОМИНАЦИЯ ORIGINAL</span>
+              <span class="custom-option">НОМИНАЦИЯ AMERICANTRUCK</span>
+              <span class="custom-option">НОМИНАЦИЯ CHINATRUCK</span>
+              <span class="custom-option">НОМИНАЦИЯ RUSSIAN STYLE</span>
+              <span class="custom-option">НОМИНАЦИЯ MKT</span>
+              <span class="custom-option">НОМИНАЦИЯ OLDSKOOL</span>
+              <span class="custom-option">НОМИНАЦИЯ СИЛАЧ</span>
+              <span class="custom-option">НОМИНАЦИЯ GOINSTYLE</span>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" placeholder="Марка машины*" required>
+      </div>
+
+      <div class="form-row">
+        <!-- Custom Country -->
+        <div class="custom-select-wrapper">
+      <div class="custom-select" id="countrySelect">
+        <div class="custom-select-trigger">
+          <span>Страна*</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="custom-options">
+          <span class="custom-option">Россия</span>
+          <span class="custom-option">Казахстан</span>
+          <span class="custom-option">Беларусь</span>
+          <span class="custom-option">Азербайджан</span>
+          <span class="custom-option">Латвия</span>
+          <span class="custom-option">Литва</span>
+        </div>
+      </div>
+    </div>
+
+        <input type="text" placeholder="Город*" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Telegram">
+        <input type="text" placeholder="Вконтакте">
+      </div>
+
+      <textarea rows="3" placeholder="Комментарии"></textarea>
+
+      <label class="file-label">
+      <div class="file-icon"></div>
+      <div class="file-text">
+        <strong>Прикрепить фото *</strong>
+        <span>(2–3 шт)</span>
+      </div>
+      <input type="file" multiple>
+    </label>
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   <!-- Modal 2 -->
+  <div class="modal" tabindex="-1" id="Modal2">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Посетить</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="contact-form active">
+
+      <div class="">
+        <input type="text" placeholder="ФИО*" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Телефон*" required>
+        <input type="email" placeholder="E-mail*" required>
+      </div>
+
+      <div class="form-row">
+        <!-- Custom Country -->
+        <div class="custom-select-wrapper">
+      <div class="custom-select" id="countrySelect">
+        <div class="custom-select-trigger">
+          <span>Страна*</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="custom-options">
+          <span class="custom-option">Россия</span>
+          <span class="custom-option">Казахстан</span>
+          <span class="custom-option">Беларусь</span>
+          <span class="custom-option">Азербайджан</span>
+          <span class="custom-option">Латвия</span>
+          <span class="custom-option">Литва</span>
+        </div>
+      </div>
+    </div>
+
+        <input type="text" placeholder="Город*" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Telegram">
+        <input type="text" placeholder="Вконтакте">
+      </div>
+
+      <textarea rows="3" placeholder="Комментарии"></textarea>
+
+      <label class="file-label">
+      <div class="file-icon"></div>
+      <div class="file-text">
+        <strong>Прикрепить фото *</strong>
+        <span>(2–3 шт)</span>
+      </div>
+      <input type="file" multiple>
+    </label>
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
     <img src="/img/logo.webp" alt="Жизнь в Кабине" class="menu-logo">
@@ -161,126 +319,180 @@
       </svg>
     </button>
   </header>
+
   <main>
     <div class="breadcrumb container">
         <a href="/">Главная</a>
         <span class="divider">/</span>
-        <span class="current">О нас</span>
+        <span class="current">Участникам</span>
     </div>
 
-    <section class="home-about">
-            <div class="home-about__inner container">
-                <div class="home-about__breadcrumb"> <span> </span>
-                    <p class="text-24">достижения</p>
-                </div>
-                <div class="achievements">
-                    <div class="achievements-card">
-                        <h2 class="title-205 achievements-card__counter">30+</h2>
-                    <p class="text-24 achievements-card__text">
-                        комплектных<br>компрессорных установок</p>                    </div>
-                                        <div class="achievements-card">
-                                            <h2 class="title-205 achievements-card__counter">2</h2>
-                    <p class="text-24 achievements-card__text">установки комплексной <br>подготовки газа</p>                    </div>
-                                        <div class="achievements-card">
-                                            <h2 class="title-205 achievements-card__counter">50+</h2>
-                    <p class="text-24 achievements-card__text">пунктов подготовки газа&nbsp;<br class="desktop">и газораспределитель<br class="mobile">ных станций</p>                    </div>
-                                        <div class="decisions__line desktop"></div>
-                                        <div class="achievements-card">
-                                            <h2 class="title-205 achievements-card__counter">15+</h2>
-                    <p class="text-24 achievements-card__text">лет создаем традиции российского энергетического инжиниринга</p>                    </div>
-                                        <div class="decisions__line tablet"></div>
-                                        <div class="achievements-card">
-                                            <div class="achievements-card__title">
-                        <h2 class="title-76">Задаем тренды технических решений </h2><span class="title-76 grey">на&nbsp;базе передовых технологий</span>
-                    </div>
-                    <p class="text-24">Более 15&nbsp;лет&nbsp;сотрудники компании инициировали и&nbsp;воплощали в жизнь не&nbsp;только проекты&nbsp;по&nbsp;поставкам технологичного оборудования и&nbsp;проектированию, а&nbsp;формировали технические решения на&nbsp;базе самых современных и&nbsp;передовых технологий по&nbsp;каждому из&nbsp;предлагаемых направлений.</p>                    </div>
-                </div>
+    <section class="participants-banner">
+        <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h2>Грузовой День — территория мощи, технологий и вдохновения</h2>
+              <a class="btn-elevated" data-bs-toggle="modal" data-bs-target="#Modal2">
+                <span class="btn-elevated__text">Посетить</span>
+              </a>
             </div>
-        </section>
+    </section>
 
-        <section class="projects gallery" id="gallery">
-            <div class="section-title">
-                <h2 class="mb-5">Галерея</h2>
-            </div>
+    <section class="about-festival">
+  <div class="container">
+    <div class="about-festival__item">
 
-            <div class="owl-carousel gallery-carousel">
-                <div class="item">
-                    <a href="/img/slider1.webp" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider1.webp" alt="Image 1">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider2.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider2.jpg" alt="Image 2">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider3.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider3.jpg" alt="Image 3">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider4.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider4.jpg" alt="Image 4">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/about1.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/about1.jpg" alt="Image 5">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider1.webp" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider1.webp" alt="Image 6">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider2.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider2.jpg" alt="Image 7">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider3.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider3.jpg" alt="Image 8">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider4.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider4.jpg" alt="Image 9">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/about1.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/about1.jpg" alt="Image 10">
-                    </a>
-                </div><div class="item">
-                    <a href="/img/slider1.webp" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider1.webp" alt="Image 11">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider2.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider2.jpg" alt="Image 12">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider3.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider3.jpg" alt="Image 13">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/slider4.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/slider4.jpg" alt="Image 14">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/img/about1.jpg" data-fancybox="gallery" data-caption="Trucks">
-                        <img src="/img/about1.jpg" alt="Image 15">
-                    </a>
-                </div>
+      <div class="about-festival__item-inner">
+        <h2>УВАЖАЕМЫЙ УЧАСТНИК!</h2>
+
+        <p>
+          ПЕРЕД ПОДАЧЕЙ ЗАЯВКИ НА УЧАСТИЕ, ПОЖАЛУЙСТА,
+          ОЗНАКОМЬТЕСЬ С РЕГЛАМЕНТОМ ФЕСТИВАЛЯ И ВЫБЕРИТЕ
+          СООТВЕТСТВУЮЩУЮ НОМИНАЦИЮ
+        </p>
+
+        <div class="about-festival__description">
+          <p>
+            После этого заполните все необходимые поля и ожидайте ответ от
+            организаторов. Если ваш автомобиль находится в процессе доработки
+            или восстановления, можно прикрепить фото до, а в строке МАРКА
+            МАШИНЫ дописать (Проект). Направляя заявку на участие, вы даёте
+            согласие на обработку персональных данных.
+          </p>
+        </div>
+
+        <a href="#" target="_blank" class="about-festival__download download">
+    <span class="file-icon"></span>
+    Скачать памятку водителя
+</a>
+      </div>
+
+      <div class="about-festival__images">
+        <div class="img1">
+          <img src="/img/slider3.jpg" alt="">
+        </div>
+
+        <div class="img2">
+          <img src="/img/slider1.webp" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <section class="nominations">
+        <div class="container">
+            <div class="nominations__wrapper">
+              <div class="nominations_wrapper-header">
+                 <h2>Номинации</h2>
+                <a  class="button" href="">
+                  <span>Посмотреть все</span>
+                  </a>
+              </div>
+                <div class="nominations__items">
+                          <a href="/russian.html" class="nominations__item">
+                            <img src="img/slider1.webp" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Россия</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo.                                   
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/american.html" class="nominations__item">
+                            <img src="img/slider2.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Америка</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. A.                                   
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/eu.html" class="nominations__item">
+                            <img src="img/slider3.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Европа</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos.                                  
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/china.html" class="nominations__item">
+                            <img src="img/slider4.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Китай</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In!                                  
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/russian.html" class="nominations__item">
+                            <img src="img/slider1.webp" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>МКТ</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.                                   
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/russian.html" class="nominations__item">
+                            <img src="img/slider2.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Автопоезд</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam?                                   
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/russian.html" class="nominations__item">
+                            <img src="img/slider3.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Ещё езжу</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti!                                    
+                                </p>
+                            </div>
+                          </a>
+                          <a href="/russian.html" class="nominations__item">
+                            <img src="img/slider4.jpg" alt="НОМИНАЦИЯ TITAN">
+                            <div class="nominations__item-inner">
+                                <div class="nominations__item-btn">
+                                    <p>Спец. техника</p>
+                                    <p>Подробнее</p>
+                                </div>
+                                <p class="nominations__item-description" style="margin-bottom: -23px;">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.                                   
+                                </p>
+                            </div>
+                          </a>
+                  </div>
             </div>
-        </section>
+        </div>
+    </section>
+
   </main>
+
 
   <footer>
   <div class="fcontainer">
@@ -329,10 +541,10 @@
         <div class="footer-menu">
           <div>
             <a href="#">Фестиваль</a>
-          <a href="#">Участникам</a>
+          <a href="/participants.html">Участникам</a>
           </div>
           <div>
-            <a href="#">Посетителям</a>
+            <a href="/visitors.html">Посетителям</a>
             <a href="/nominations.html">Номинации</a>
           </div>
           <div>
@@ -386,48 +598,13 @@
     </div>
   </div>
 </footer>
-    <script src="/jquery.min.js"></script>
-    <script src="/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/6e8461733e.js" crossorigin="anonymous"></script>
-    <script src="/main.js"></script>
-    <script>
-        $('.gallery-carousel').owlCarousel({
-            loop: true,
-            center: true,
-            items: 3,
-            margin: 50,
-            autoplay: true,
-            autoplayTimeout: 3000,  
-            smartSpeed: 250,
-            nav: true,
-            dots: false,
-            navText: [
-                '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 492 492"><path d="M198.6 246.1L382.7 62c5.1-5.1 7.9-11.8 7.9-19s-2.8-14-7.9-19L366.6 7.9c-5.1-5.1-11.9-7.9-19.1-7.9s-13.9 2.8-19 7.9L109.3 227c-5.1 5.1-7.9 11.9-7.9 19.1s2.8 14 7.9 19.1l219 219c5.1 5.1 11.8 7.9 19 7.9s14-2.8 19.1-7.9l16.1-16.1c10.5-10.5 10.5-27.6 0-38.1L198.6 246.1z"/></svg>',
-                '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 492 492"><path d="M382.7 226.8L163.7 7.9c-5-5.1-11.8-7.9-19-7.9s-14 2.8-19.1 7.9l-16.1 16.1c-10.5 10.5-10.5 27.6 0 38.1L293.4 245.9 109.3 430c-5.1 5.1-7.9 11.8-7.9 19.1s2.8 14 7.9 19.1l16.1 16.1c5.1 5.1 11.9 7.9 19.1 7.9s14-2.8 19-7.9l219-219c5.1-5.1 7.9-11.9 7.9-19.1s-2.8-14-7.9-19.1z"/></svg>'
-            ],
-            responsive: {
-                0: { items: 1 },
-                768: { items: 1.5 },
-                1200: { items: 3 }
-            }
-        });
-        Fancybox.bind("[data-fancybox='gallery']", {
-            Thumbs: { autoStart: true }, // enables bottom thumbnails
-            Toolbar: {
-                display: [
-                    { id: "counter", position: "center" },
-                    "zoom",
-                    "slideshow",
-                    "fullscreen",
-                    "close"
-                ]
-            }
-        });
 
-    </script>
-    </body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
 
 </html>
