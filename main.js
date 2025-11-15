@@ -147,3 +147,15 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.addEventListener('click', toggleMenu);
   }
 });
+const tabs = document.querySelectorAll(".media-tab");
+const contents = document.querySelectorAll(".media-content");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        contents.forEach(c => c.classList.remove("active"));
+        document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+});
