@@ -76,9 +76,7 @@ a {
   background: var(--main-color);
 }
 
-/* .modal-dialog-scrollable .modal-body {
-    overflow-y: inherit;
-} */
+
 
 /* SVG icon styling */
 .menu-icon {
@@ -453,6 +451,9 @@ nav {
   color: var(--main-color)
 }
 
+.hero-slider .btn-elevated span{
+  font-size: 18px !important;
+}
 .heroSwiper .swiper-slide,
 .participants-banner {
   background-size: cover;
@@ -580,10 +581,6 @@ nav {
   width: 0%;
   background: var(--main-color);
   transition: width 4s linear;
-}
-
-.modal-dialog-scrollable .modal-body {
-  overflow-y: inherit;
 }
 
 .nav-buttons {
@@ -860,12 +857,15 @@ nav {
   padding-left: 30px;
   position: relative;
 }
+.city-grid li a{
+  color: #333;
+}
 
 .city-grid li::before {
   counter-increment: city;
   content: counter(city) ".";
   position: absolute;
-  left: 0;
+  left: -10px;
   top: 0;
   font-weight: 600;
   color: var(--Dark-Main, #474e5a);
@@ -2269,7 +2269,6 @@ footer .socials {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  height: 84px;
   font-family: "Play", sans-serif !important
 }
 
@@ -4063,6 +4062,7 @@ img {
   .footer__content-bottom {
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .program__accordion-btn{
@@ -4166,6 +4166,19 @@ img {
     font-size: 32px;
   }
 
+  .footer__content-bottom{
+    align-items:flex-start
+  }
+  .footer__content-top{
+    align-items:flex-start
+  }
+  .footer__content-top div{
+    align-items:flex-start
+  }
+  .copyright__content{
+    flex-direction: column;
+    gap: 20px;
+  }
   .footer-menu {
     gap: 5px;
     flex-direction: column !important;
